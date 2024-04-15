@@ -38,4 +38,42 @@ I use Microsoft SQL Server Management Studio as my primary data tool for the pro
 
 After importing the dataset into Microsoft SQL Server Management Studio, the next step is confirming the integrity of the imported data. It is necessary to verify if there are the same number of columns and rows as before the import. Also, inspect whether the columns have the right data types.
 
+**Observe the data by retrieving first 10 records of the dataset**
+```sql
+        
+SELECT TOP 10 *
+FROM ifood_df;
+
+```
+
+![TOP 10](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/58d42594-7d75-4adb-b472-1df40fda6fcf)
+
+
+**Check Column names and Datatypes**
+
+```sql
+SELECT COLUMN_NAME,DATA_TYPE
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'Superstoresales';
+
+```
+![Screenshot 2024-04-15 111104](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/32261401-1949-4518-99c0-f2af231e656e)
+
+
+This revealed that all columns are up to 39 and have the right data types as one before import. 
+
+**Check the number or rows imported**
+
+ ```sql
+SELECT COUNT(*) AS row_count
+FROM ifood_df;
+```
+
+![Screenshot 2024-04-15 111700](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/13a146f3-80a6-4906-94c9-3d5c8e5d6d24)
+
+
+Returns 2205 rows, which is the same as before import. 
+
+## Analysis
+
 

@@ -4,7 +4,7 @@
  Our recent marketing campaigns have not been as effective as they were expected to be; As a marketing analyst, I have been tasked by the Chief Marketing Officer to
  analyse the marketing dataset provided to understand this problem and propose data-driven solutions. 
 
-This project aims to evaluate the effectiveness of recent marketing campaigns by analyzing marketing data. Optimizing future marketing strategies and driving business growth require an understanding of the performance of these campaigns.
+This project aims to evaluate the effectiveness of recent marketing campaigns by analyzing the [marketing data](https://www.kaggle.com/datasets/jackdaoud/marketing-data). Optimizing future marketing strategies and driving business growth require an understanding of the performance of these campaigns.
 In this analysis, various aspects of marketing data are examined, including segmentation of customers, campaign performance, channel effectiveness, and demographic trends.
 
 By examining these key areas, I aim to uncover actionable insights that will inform data-driven decision-making and guide strategic marketing initiatives. 
@@ -25,7 +25,7 @@ By addressing these questions and providing actionable recommendations, this ana
 
 ## THE DATA
 
-The marketing dataset is a CSV file downloaded from Kaggle. It contains 39 columns and 2205 rows. Below is an image of the columns and their descriptions. 
+The [marketing dataset](https://www.kaggle.com/datasets/jackdaoud/marketing-data) is a CSV file downloaded from Kaggle. It contains 39 columns and 2205 rows. Below is an image of the columns and their descriptions. 
 
 ![dictionary](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/664053fd-1563-405d-bf5c-643d0f4c7609)
 
@@ -149,7 +149,6 @@ FROM ifood_df;
 
 
 
-
 **5. which channel is the most prefered by customers?**
 
 ```sql
@@ -161,7 +160,8 @@ FROM ifood_df;
 
 ```
 
-![Screenshot 2024-04-15 220930](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/ab7ba2c7-99ac-49b5-aa16-05b06bef226b)
+![Screenshot 2024-04-16 160855](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/a7ab40d5-f9db-4f87-9509-634094ff060c)
+
 
 
 ![Screenshot 2024-04-16 101547](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/ae4c8eb7-bdff-4e11-8cf6-54c5b73e0076)
@@ -216,20 +216,23 @@ ORDER BY Campaign_acceptance DESC;
 *Acceptance rates were highest among the Middle Adult and Old Age groups, at 57% and 30%, respectively, while the Young Adult group had the lowest acceptance rate at 12%*
 
 
-**8. Campaign acceptance by age group**
+**8. Campaign acceptance by Marital Status**
 
 ```sql
 SELECT SUM(marital_Married) AS Married,
        SUM(marital_Together) AS Together,
-	   SUM(marital_Divorced) AS Divorced,
-	   SUM(marital_Widow) AS Widow
+       SUM(marital_Single) AS Single,
+       SUM(marital_Divorced) AS Divorced,
+       SUM(marital_Widow) AS Widow
 FROM ifood_df;
 ```
 
-![Screenshot 2024-04-16 121541](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/bd695c46-a6ce-4d9b-bf39-840f028da4dd)
+![Screenshot 2024-04-16 160924](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/28be720d-779e-4ff3-9448-14305f97d57a)
 
 
-![image](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/45a9f16c-bddd-40fa-bf81-2aba1746ec24)
+![Screenshot 2024-04-16 120654](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/f4cec9dd-5981-4138-bb4b-36bd76ef6c53)
+
+
 
 *Most of the customers who are married(854), accepted the campaigns followed by people who are not married but are together(568).  Widow is the group with the least acceptance.* 
 
@@ -297,6 +300,16 @@ ORDER BY
 # THE REPORT 
 This report provides detailed analysis, findings, and insights based on the market data. It includes, visualizations, insights and recommendations. 
 Find the report below. 
+
+![Marketing data_page-0001](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/3ce0de7a-b809-4df8-9d38-2d220aeeaef5)
+
+Find the SQL script for the EDA [here](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/commit/e5173be249614dbec94f828862c75f7d6fe07bdf)
+
+
+I hope you found this post useful and gained new insights. Please feel free to leave a comment if you have any questions or feedback. Thank you for your time and attention - here's to continuous learning!
+
+
+
 
 
 

@@ -215,6 +215,43 @@ ORDER BY
 ![Screenshot 2024-04-15 221603](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/e967dee3-7753-4b16-b0fa-a09869ec6aaf)
 
 
+# INSIGHTS AND RECOMMENDATIONS
+
+## INSIGHTS 
+
+- In the span of two years, our organization has carried out 6 marketing initiatives, leading to the acquisition of 2,205 customers. These customers contributed $1,240,896 in sales revenue with a total of 32,828 purchases.
+
+- Latest Campaign is the most successful campaign with 333 acceptances. The least successful campaign is Campaign 2 with only 30 acceptances.
+
+- 12,841 purchases were made through Store making it the best performing channel followed by Web with 9,042 purchases. Catalog is the least performing sales channel with 5,833 purchases.
+
+- Wines and Meat products came out as the top performers in sales, generating $675,093 and $364,513, respectively. Fruits and Sweet generated the least sales.
+
+- Most of the customers who are married(854), accepted the campaigns followed by people who are not married but are together(568).  Widow is the group with the least acceptance.
+
+- Acceptance rates were highest among the Middle Adult and Old Age groups, at 57% and 30%, respectively, while the Young Adult group had the lowest acceptance rate at 12%.
+
+- The Middle Income and High Income segments had the highest acceptance rates, with 59% and 39% respectively.. Low Income group has the lowest.
+
+- Graduate has higher proportion of campaign acceptance (50%) followed by Post Graduate  (38%)and then Under Graduate(11%).
+
+
+## RECOMMENDATIONS
+
+- The latest campaign's success indicates that its methods and strategies are well-received by consumers. Examine the factors that made it successful and implement those same components in subsequent campaigns.
+
+- Invest more in marketing on high-converting platforms like the Store and Web. Our reach, engagement, and conversion rates can all be increased by utilizing these preferred channels. Examine the Catalog channel to find possible areas for enhancement and optimization.
+
+- Promote Wines and Meat products. Run a special marketing campaign to increase sales for these products. Also consider offering deals for low performing products such as fruits and sweets to enhance sales.
+
+- Craft focused marketing strategies, promotions, or initiatives tailored to middle and high-income earners, individuals with high educational qualifications, as well as those who are married or cohabiting to yield better result.
+
+
+# THE REPORT 
+
+
+
+
 
 
 

@@ -114,12 +114,18 @@ SELECT
 		SUM(acceptedCmp3) AS Campaign3,
 		SUM(acceptedCmp4) AS Campaign4,
 		SUM(acceptedCmp5) AS Campaign5,
-		SUM(Response) AS LastestCampaign
+		SUM(Response) AS LatestCampaign
 FROM ifood_df;
 
 ```
 
 ![Screenshot 2024-04-15 215850](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/13a794f4-22d7-45ec-ab0e-c5bd0dd46fac)
+
+
+![Screenshot 2024-04-16 093929](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/424c8af5-0439-413b-91f7-c6cd65509981)
+
+*Latest Campaign is the most successfull with a total of 333 campaign acceptances followed by campaign 4. campaign 2 and 1 are the least successfull*
+
 
 **5. What are the top selling products?**
 
@@ -136,11 +142,19 @@ FROM ifood_df;
 
 ![Screenshot 2024-04-15 220239](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/a84de259-1a0f-480c-b471-10dc6f435a1d)
 
+
+![Screenshot 2024-04-16 102829](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/99625f0b-e94b-4fcf-b69d-bc3786db4fec)
+
+*Wines and Meat products came out as the top performers in sales, generating $675,093 and $364,513, respectively. Fruits and Sweet generated the least sales.*
+
+
+
+
 **5. which channel is the most prefered by customers?**
 
 ```sql
-SELECT SUM(NumDealsPurchases) AS Deal,
-       SUM(NumWebPurchases) AS Web,
+SELECT 
+           SUM(NumWebPurchases) AS Web,
 	   SUM(NumCatalogPurchases) AS Catalog,
 	   SUM(NumStorePurchases) AS Store
 FROM ifood_df;
@@ -148,6 +162,11 @@ FROM ifood_df;
 ```
 
 ![Screenshot 2024-04-15 220930](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/ab7ba2c7-99ac-49b5-aa16-05b06bef226b)
+
+
+![Screenshot 2024-04-16 101547](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/ae4c8eb7-bdff-4e11-8cf6-54c5b73e0076)
+
+*12,841 purchases were made through Store making it the best performing channel followed by Web with 9,042 purchases. Catalog is the least performing sales channel with 5,833 purchases* 
 
 
 **6. Total acceptance by level of education** 
@@ -161,6 +180,10 @@ FROM ifood_df;
 ```
 ![Screenshot 2024-04-15 220930](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/fe80447d-08bf-4029-96e9-cfd549313d95)
 
+
+![Screenshot 2024-04-16 120006](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/63c388de-0057-46e4-b2c8-0390a679b632)
+
+*Graduate has higher proportion of campaign acceptance (50%) followed by Post Graduate  (38%)and then Under Graduate(11%).* 
 
 
 **7. Campaign acceptance by age group**
@@ -188,7 +211,29 @@ ORDER BY Campaign_acceptance DESC;
 ![Screenshot 2024-04-15 221132](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/d01e42ee-d8c7-483a-9b7b-eaa119cd482a)
 
 
-**8. Campaign acceptance by Income_Group**
+![Screenshot 2024-04-16 120241](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/a456e43a-6d73-4fe8-8372-65bde1b188c4)
+
+*Acceptance rates were highest among the Middle Adult and Old Age groups, at 57% and 30%, respectively, while the Young Adult group had the lowest acceptance rate at 12%*
+
+
+**8. Campaign acceptance by age group**
+
+```sql
+SELECT SUM(marital_Married) AS Married,
+       SUM(marital_Together) AS Together,
+	   SUM(marital_Divorced) AS Divorced,
+	   SUM(marital_Widow) AS Widow
+FROM ifood_df;
+```
+
+![Screenshot 2024-04-16 121541](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/bd695c46-a6ce-4d9b-bf39-840f028da4dd)
+
+
+![image](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/45a9f16c-bddd-40fa-bf81-2aba1746ec24)
+
+*Most of the customers who are married(854), accepted the campaigns followed by people who are not married but are together(568).  Widow is the group with the least acceptance.* 
+
+**9. Campaign acceptance by Income_Group**
 
 ```sql
 SELECT
@@ -214,6 +259,8 @@ ORDER BY
 
 ![Screenshot 2024-04-15 221603](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/e967dee3-7753-4b16-b0fa-a09869ec6aaf)
 
+*The Middle Income and High Income segments had the highest acceptance rates, with 59% and 39% respectively. Low Income group has the lowest.*
+
 
 # INSIGHTS AND RECOMMENDATIONS
 
@@ -231,7 +278,7 @@ ORDER BY
 
 - Acceptance rates were highest among the Middle Adult and Old Age groups, at 57% and 30%, respectively, while the Young Adult group had the lowest acceptance rate at 12%.
 
-- The Middle Income and High Income segments had the highest acceptance rates, with 59% and 39% respectively.. Low Income group has the lowest.
+- The Middle Income and High Income segments had the highest acceptance rates, with 59% and 39% respectively. Low Income group has the lowest.
 
 - Graduate has higher proportion of campaign acceptance (50%) followed by Post Graduate  (38%)and then Under Graduate(11%).
 
@@ -248,7 +295,8 @@ ORDER BY
 
 
 # THE REPORT 
-
+This report provides detailed analysis, findings, and insights based on the market data. It includes, visualizations, insights and recommendations. 
+Find the report below. 
 
 
 

@@ -262,6 +262,10 @@ ORDER BY
 
 ![Screenshot 2024-04-15 221603](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/e967dee3-7753-4b16-b0fa-a09869ec6aaf)
 
+
+![Screenshot 2024-04-16 120241](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/1b05366e-280f-44cb-808f-9c7ff0a201fe)
+
+
 *The Middle Income and High Income segments had the highest acceptance rates, with 59% and 39% respectively. Low Income group has the lowest.*
 
 
@@ -299,9 +303,11 @@ ORDER BY
 
 # THE REPORT 
 This report provides detailed analysis, findings, and insights based on the market data. It includes, visualizations, insights and recommendations. 
+
 Find the report below. 
 
 ![Marketing data_page-0001](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/assets/132214828/3ce0de7a-b809-4df8-9d38-2d220aeeaef5)
+
 
 Find the SQL script for the EDA [here](https://github.com/dannieRope/Marketing-Sales-Analysis-SQL-and-Power-BI-project/commit/e5173be249614dbec94f828862c75f7d6fe07bdf)
 

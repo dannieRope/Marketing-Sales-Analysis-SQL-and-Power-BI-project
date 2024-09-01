@@ -1,7 +1,7 @@
 # Understanding the Performance of Our Recent Marketing Initiatives: Insights and Recommendation
 
 # INTRODUCTION
- Our recent marketing campaigns have not been as effective as they were expected to be; As a marketing analyst, I have been tasked by the Chief Marketing Officer to
+ Our recent marketing campaigns have not been as effective as they were expected to be; As a Sales and marketing analyst, I have been tasked by the Chief Marketing Officer to
  analyse the marketing dataset provided to understand this problem and propose data-driven solutions. 
 
 This project aims to evaluate the effectiveness of recent marketing campaigns by analyzing the [marketing data](https://www.kaggle.com/datasets/jackdaoud/marketing-data). Optimizing future marketing strategies and driving business growth require an understanding of the performance of these campaigns.
